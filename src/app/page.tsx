@@ -126,8 +126,8 @@ export default function Home() {
               <div className="absolute -inset-4 md:-inset-8 bg-gradient-to-tr from-blue-500/20 to-purple-500/20 rounded-3xl blur-xl md:blur-3xl opacity-60 group-hover:opacity-100 transition-opacity duration-1000" />
               <div className="relative p-1.5 md:p-2 rounded-[1.5rem] md:rounded-[2.5rem] mt-2 bg-white/5 border border-white/10 backdrop-blur-2xl shadow-2xl overflow-hidden ring-1 ring-white/5">
                 <ImageRevealLens
-                  baseImage="/images/reveal-base.png"
-                  revealImage="/images/reveal-hidden.png"
+                  baseImage="/images/reveal-base2.png"
+                  revealImage="/images/reveal-hidden1.png"
                   maskSize={200}
                 />
               </div>

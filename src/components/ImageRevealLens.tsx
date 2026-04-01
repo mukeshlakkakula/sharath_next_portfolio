@@ -49,7 +49,7 @@ export default function ImageRevealLens({
                 src={baseImage}
                 alt={alt}
                 fill
-                className={`object-cover transition-all duration-700 ${grayscaleBase ? 'grayscale opacity-70 group-hover:opacity-40' : 'opacity-60 group-hover:opacity-40'}`}
+                className={`object-cover transition-all duration-700 ${grayscaleBase ? 'grayscale opacity-100 group-hover:opacity-40' : 'opacity-100 group-hover:opacity-40'}`}
                 priority
             />
 
@@ -63,12 +63,14 @@ export default function ImageRevealLens({
                     backgroundPosition: "center",
                     WebkitMaskImage: maskGradient,
                     maskImage: maskGradient,
+                    WebkitMaskRepeat: 'no-repeat',
+                    maskRepeat: 'no-repeat',
                 }}
             />
 
             {/* Subtle Overlay Label */}
             <div className="absolute top-6 right-6 pointer-events-none">
-                <div className="opacity-0 group-hover:opacity-100 transition-all duration-500 translate-x-4 group-hover:translate-x-0">
+                <div className="opacity-[0.2] group-hover:opacity-100 transition-all duration-500 translate-x-4 group-hover:translate-x-0">
                     <div className="bg-white/10 backdrop-blur-md border border-white/10 px-3 py-1.5 rounded-full text-white text-[10px] font-bold uppercase tracking-wider">
                         REVEAL COLOR
                     </div>
