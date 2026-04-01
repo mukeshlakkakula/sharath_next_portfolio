@@ -1,4 +1,4 @@
-"use client"
+import ParticleWave from "./ParticleWave"
 
 interface HeroProps {
     handleScroll: (e: any, id: string) => void
@@ -6,7 +6,9 @@ interface HeroProps {
 
 export default function HeroSection({ handleScroll }: HeroProps) {
     return (
-        <section id="hero" className="flex flex-col items-center justify-center text-center min-h-screen px-4 py-20 w-full relative">
+        <section id="hero" className="flex flex-col items-center justify-center text-center min-h-screen px-4 py-20 w-full relative overflow-hidden bg-black">
+            {/* 3D Particle Background */}
+            <ParticleWave />
             <div className="space-y-4 md:space-y-8 max-w-4xl z-20">
                 {/* Badge */}
                 <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/5 border border-white/10 backdrop-blur-sm animate-fade-in">
